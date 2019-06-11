@@ -1,0 +1,88 @@
+%!TeX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%
+% 不能在文章中使用中文
+% 模板文档: http://mirror.aut.ac.nz/CTAN/macros/latex/contrib/apa6/apa6.pdf
+% \section{我是一级标题} 一级标题
+% \subsection{我是二级标题} 二级标题
+% \subsubsection{我是三级标题} 三级标题
+% 带括号引用 \parencite{文章简写}
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+% 文档定义
+%%%%%%%%%%%%%%%%%
+\documentclass[a4paper]{article}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+% 其他包
+% 数学符号
+\usepackage{amssymb}
+% 导入csv表格
+\usepackage{csvsimple}
+% 导入图片
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% 超链接支持
+\usepackage[hidelinks]{hyperref}
+% 多行注释
+\usepackage{verbatim}
+% 插图caption
+\usepackage{caption}
+\usepackage{subcaption}
+% 缩放table
+\usepackage{adjustbox}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+
+\title{What Makes IT Deployment Projects Successful: A Theoretical Review and an Evaluation Tool}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Lu \& Wei}
+\chead{BCIS301-A2}
+% 页眉中的标题
+% \shorttitle{}
+
+% 作者/组织
+% \twoauthors{Louis Lu}{Zhong Wei}
+\author{
+  Louis Lu
+  \and
+  Zhong Wei
+}
+% \twoaffiliations{Ara Institute of Canterbury}{Ara Institute of Canterbury}
+
+% \leftheader{}
+
+% \abstract{}
+% \keywords{}
+
+%%%%%%%%%%%%%%%%%
+% 文档正文
+%%%%%%%%%%%%%%%%%
+\begin{document}
+% 隐藏页眉
+% \thispagestyle{otherpage}
+% 标题
+\maketitle
+
+%%%%%%%%%%%%%%%%%
+% 目录
+%%%%%%%%%%%%%%%%%
+\clearpage
+\tableofcontents
+\clearpage
+
+\input{chapters/1-introduction}
+\input{chapters/2-methodology}
+\input{chapters/3-data-analysis}
+\input{chapters/4-solution-analysis}
+\input{chapters/5-deployment-plan}
+\input{chapters/6-summary}
+
+%%%%%%%%%%%%%%%%%
+% 参考文献
+%%%%%%%%%%%%%%%%%
+% \printbibliography
+\end{document}
