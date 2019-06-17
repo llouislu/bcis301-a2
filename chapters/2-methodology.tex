@@ -24,24 +24,33 @@ The second source is from our interviews of the acting head of the department an
 \subsection{Data Analysis}
 With all the transcripts of interviews complied, data analysis commences with the following steps. 
 	% function analysis (thematic analysis)
-Functions are first identified by thematic analysis. The functions are the categories for the questions to be identified in the qualitative analysis, since the existing transcripts of interviews already provide a clear separation of functions.
+Functions are first identified by thematic analysis. The current situation and technologies are investigated in the thematic analysis, which serves as the assets for the next step to be illustrated next. The functional analysis covers the current jobs and duties inside the department and the related IT technologies deployed in the department.
 	% qualitative analysis
 
-With all the functions inside the department defined, a qualitative analysis is progressed, trying to find all the issues that can be classified into a
-
+With all the functions inside the department defined, a qualitative analysis is progressed, trying to find all the issues that can be classified into primary themes after collecting their secondary themes based on facts. In other words, the outcome of qualitative analysis are facts, issues, secondary themes and primary themes.
 
 	% Generic IT Deployment Strategies (centrally planned)
-
+Generic IT deployment strategies concludes the general rules applied to a variety of organization. There are 7 types of organizations: centrally planned, leading edge, free market, monopoly, scarce resource and necessary evil. A type is selected to draft solutions and to select the solutions, according to the features that the computing department has.
 
 \subsection{Solution Analysis}
-	
 	% 对每一类问题给解决方案
-
+Solutions are given to each primary theme, the generalized topic that are identified in the qualitative analysis. All the potential solutions are the candidates that will be evaluated in a framework to select the best practice to be done.
 	% 得分表算法
+The Evaluation framework tries to assess the the ability to solve the generalized topics of primary themes in qualitative analysis. For each solution, the score calculates as follows.
 
-\subsection{Deplyment Plan}
+$$
+R_{S_i} = \sum_{j=1}^n{r_{S_i, t_j}}
+$$
 
+$R$ denotes a final rating. $S_i$ is a candidate solution. Thus, $r_{S_i}$ is the final rating of a given candidate solution. $t_j$ is the primary theme of a given generalized issue. Therefore, $\sum_{j=1}^n{r_{S_i, t_j}}$ is a rating out of 10 for the ability to solve the specific generalized topic of issues $S_{t_i}$. If the solution brings positive impact of the given topic of issues, a positive score will be rated. On the contrary, a negative score will be marked if there is a negative effect to the same topic of issues. The range of the score $R_{Si_{t_j}} \in [-10, 10]$
+
+The average score $\bar{R_{S}}$ of all the solutions is calculated. Every solution above the average score is considered as approved solution to be selected the deployment plan.
+
+
+\subsection{Deployment Plan}
 	% 对evaluated 的方案放入hierachy
+The deployment plan puts all the building blocks into an hierarchy structure to illustrate the whole decision making process in a visually expressive way, where the goals, issues, solutions, the selected of solutions and the connections between the elements.
+
 
 % % 总流程
 % \subsection{Synopsis}
