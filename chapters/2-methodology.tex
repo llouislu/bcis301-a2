@@ -40,9 +40,10 @@ The Evaluation framework tries to assess the ability to solve the generalized to
 
 $$
 R_{S_i} = \sum_{j=1}^n{r_{S_i, t_j}}
+\label{eq:score}
 $$
 
-$R$ denotes a final rating. $S_i$ is a candidate solution. Thus, $r_{S_i}$ is the final rating of a given candidate solution. $t_j$ is the primary theme of a given generalized issue. Therefore, $\sum_{j=1}^n{r_{S_i, t_j}}$ is a rating out of 10 for the ability to solve the specific generalized topic of issues $S_{t_i}$. If the solution brings positive impact of the given topic of issues, a positive score will be rated. On the contrary, a negative score will be marked if there is a negative effect on the same topic of issues. The range of the score $R_{Si_{t_j}} \in [-10, 10]$
+$R$ denotes a final rating. $S_i$ is a candidate solution. Thus, $r_{S_i}$ is the final rating of a given candidate solution. $t_j$ is the primary theme of a given generalized issue. Therefore, $\sum_{j=1}^n{r_{S_i, t_j}}$ is a rating out of 10 for the ability to solve the specific generalized topic of issues $S_{t_i}$. If the solution brings positive impact of the given topic of issues, a positive score will be rated. On the contrary, a negative score will be marked if there is a negative effect on the same topic of issues. The range of the score $r_{S_i, t_j} \in [-10, 10]$
 
 The average score of $\bar{R_{S}}$ of all the solutions are calculated. Every solution above the average score is considered as approved solution to be selected the deployment plan.
 
