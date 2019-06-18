@@ -32,9 +32,13 @@ Finally, it is totally free. Unlike many of its competitors, Telegram doesn't me
 Telegram brings the idea of 'agile' to the small and flexible working environment in the Department of Computing. Its powerful group feature offers unified history, all platform access, instant search, replies, mentions, and hashtags, pinned messages, file sharing, group permission, to name but a few. Those features just mentioned enable the department to solve kinds of communication issues and security concerns partially.
 
 \subsubsection{Slack}
-Slack is another solution to communication issues. Slack is an enterprise-oriented instant messaging application that features projects, channels, and other high customizable functions.
+Slack is yet another solution to communication issues. It is an enterprise-oriented instant messaging application that features projects, channels, and other high customizable functions.
 
-The highlighted feature is its channels. Channel acts as a group chat on a specific topic. Slack enables permission administration on channels so that users of different readability are organized to carry out scheduled tasks accordingly. Another practical feature is the chatting history. A newly joined user is able to view the messages and files submitted to the channel before he or she joins.
+Another highlighted feature is its channels. Channel acts as a group chat on a specific topic. Slack enables permission administration on channels so that users of different readability are organized to carry out scheduled tasks accordingly. Another practical feature is the chatting history. A newly joined user is able to view the messages and files submitted to the channel before he or she joins.
+
+Slack enhances the communication over the tools which have been used in the Department of Computing. It does not  mean to replace them,  but it can make them better. Slack has a much powerful ability to integrate with existing service. For instance, sharing files in Slack is easier, since it can find and share files from OneDrive, Dropbox, Google Drive etc without leaving Slack.
+
+The drawback of Slack is that it is not free. It do provide a free plan, but many limitations are applied on that plan, this has weakened its competitiveness to some extent. 
 
 \subsubsection{Jira}
 
@@ -43,9 +47,16 @@ Jira is a comprehensive tool for issue and tracking. Jira can reduce the manual 
 With careful investigation and design of workflows in the department, Jira is able to digitalize the communication process in various kinds of tasks and facilities high efficiency of communication.
 
 \subsubsection{Windows 10 Sandbox}
-The Computing department is experiencing the restriction of using specific software in labs. One of the reason causing this is whole dependency of the centrally governed administration policy with Active Directory. Nevertheless, this technology lowers the cost of management of rooms of machines. The number of installed programs stops students wish to run the helpful tools they want. The new Windows 10 sandbox is a feature that runs a virtual machine on a Windows 10 operating system without an extra license. A policy can be implemented to limit the disk usage of students and to grant them permission to run all kinds of software they wish.
 
-Only a tiny effort of configuration to enable this feature and to set up some restriction can make a total difference of the deployment of software in computer labs.
+Tutors and students always want to run their favorite program in computer labs. However, running executable files on Windows is a rather risky thing since the executable files which are downloaded from the internet are mostly not safe. It can be a serious issue to the Windows operating system. Fortunately, Microsoft has done a good job to solve that kind of issue. That is Windows Sandbox.
+
+The idea is not fresh, which is running a windows instance in a virtual machine. The highlight is that you can run that instance without an extra license. Just use it, no worries of license are necessary to consider. 
+
+As we have mentioned earlier, the Computing Department is experiencing the restriction of using specific software in labs. One of the reasons causing this is the whole dependency of the centrally governed administration policy with Active Directory. Nevertheless, this technology lowers the cost of management of rooms of machines. The number of installed programs prevents students from wanting to run the helpful tools they want. 
+
+The new Windows 10 sandbox feature resolves this problem in a graceful manner. Impressively, the requirements to the host computer are rather low: Windows 10 Pro or Enterprise build 18301 or later, X64 architecture, 4GB RAM, 1GB free disk space, 2 CPU cores. The best part of this approach is that no virtual hard disk is needed. Instead, Windows dynamically generates a clean snapshot OS based on the Host OS on the current machine. This approach does not copy files which the VM needs but link them. It saves much disk space and runs faster. The VM image is incredibly small, just around 100 MB. As we have mentioned, since it is a copy of your OS, no separate license key is needed.  
+
+Only a tiny effort of configuration to enable this feature and to set up some restriction can make a total difference of the deployment of software in computer labs. In addtion, a policy can be implemented to limit the disk usage of students and to grant them permission to run all kinds of software they wish.
 
 \subsubsection{New Network and Servers}
 The setup of the existing two separated networks ensures the security but accessibility is impacted. On the network, there are obsoleting services running that need changing for the centralized services of the local area network. Furthermore, the Tech Labs tutor demands new servers to scale up. We argue that there should be a new design of architecture that solves the security and accessibility problem at the same.
