@@ -3,24 +3,52 @@
 \section{Solution Analysis}
 
 \subsection{Potential Solutions}
-% 别出solutions
+
+According the methodology, the following possible solutions are drafted to solve the topics of issues that have discussed in the previous section. There are 5 topics of issues identified in data analysis. For each topic, there will be one or more solutions to be evaluated the later part of this section.
 
 \subsubsection{Linux with Docker}
+Linux with docker is a solution for issues related to budget, security and software.
+
+Linux is a free and opensource operating system started in 1991, which is a free version of UNIX system back in 1970s. Linux is able to be running on multiple architectures with various configurations of hardwares.
+
+Docker is a container platform that is able to separate the environment of execution from the physical operating system running on the physical machine. Docker relies to an hypervisor software such as VirtualBox, VMWare Workstation and so on. For less budget to be spent, the free and opensource Virtualbox is selected to run the docker on Linux platform.
+
+The Combination of Linux and Docker is due to the following factors. Firstly, docker is more performant in Linux physical machine via VirtualBox hypervising abstructing the hardwares. Secondly, the current IT deployment involved with a centralized administration on Windows platform fails to deliver the freedom  and the accessibility of installing and running students' softwares, especially the networking students who study configuration of operating systems with tedious and repeated setups of virtual machines. Finally, according to the TechLab tutor, Linux is considered to be the operating system for their labs, which favors the need of both tutors and students.
 
 \subsubsection{Telegram}
 
+Telegram is end-to-end encrypted instant messaging application running on multiple platforms such as Windows, MacOS, Linux, Android and iOS.
+
+Telegram provides the messaging functionalities that other IM applications fail to achieve. In telegram, all the messages are tagged with reading status of unread and read. This feature fits the enterprise working environment, targeted for more effective communications. Moreover, telegram is able to send any kinds of file that is less than 1.5 GB, which brings the idea of 'agile' to the small and flexible working environment in Department of Computing. The two highlighted features enable the department to solve the communication issues and security concerns partially.
+
 \subsubsection{Slack}
+Slack is another solution to the communication issues. Slack is enterprise oriented instant messaging application that features projects, channels and other high customizable functions.
+
+The highlighted feature is channel. Channel acts like a group chat on a specific topic. Slack enables permission administration on channels so that users of different readability are organized to carry out scheduled tasks accordingly. Another practical feature is the chatting history. A new joined user is able to view the messages and files submitted to the channel before he or she joins.
 
 \subsubsection{Jira}
 
+Jira is a comprehensive tool for issue and tracking. Jira can reduce the manual process involved in the department and lower communication barriers. There are so many manual process in the workflows of several functions inside the department. Jira administrator is able to define a customized the workflows in a contexts connects several roles. Process is defined in a workflow chart that stakeholders are fully aware of the progress they are making. Permission management is well covered by scopes of project, group, user and workflow. In other words, a task goes through the workflow that can decides who does something at what time and that who has the permission to view or alter state or history. Moreover, Jira integrates a reporting system in the software that helps to do statistics for future adjustment in the department.
+
+With careful investigation and design of workflows in the department, Jira is able to digitalizes the communication process in various kinds of tasks and facilities high efficiency of communication.
+
 \subsubsection{Windows 10 Sandbox}
+Computing department is experiencing the restriction of using softwares in labs. One of the reason causing this is whole dependency of the centrally governed administration policy with Active Directory. Nevertheless, this technology lowers the cost of management of rooms of machines. The number of installed programs stops students wish to run the helpful tools they want. The new Windows 10 sandbox is a feature that runs a virtual machine on a Windows 10 operating system without an extra license. A policy can be implemented to limit the disk usage of students and to grant them the permission to run all kinds of softwares they wish.
+
+Only a tiny effort of configuration to enable this feature and to set up some restriction can make a total difference of the deployment of softwares in computer labs.
 
 \subsubsection{New Network and Servers}
+The setup of existing two separated networks ensures the security but accessibility is impacted. On the network, there are obsoleting services running that need changing for the centralized services of the local area network. Furthermore, the TechLabs tutor demands for new servers to scale up. We argue that there should be a new design of architecture that solve the security and accessibility problem at the same.
 
+Site-to-site VPN is a method for connecting two isolated networks with controllable configuration of firewall. New servers should be purchased to scale up the the labs and the servers that powers the local SMB shared folders with redundancy.
 
 \subsection{Evaluation of Solutions}
+An evaluation of the aforementioned candidate solutions is done according to the framework mentioned in Methodology.
 
-\subsubsection{Rating}
+\subsubsection{Rating of Candidate Solutions}
+
+Scores are given to the topics of issues in the section of Data Analysis, namely budget, communication, manual process, security and software. The result is shown in \autoref{tab:eva}.
+
 \begin{table}[!ht]
 \caption{Ratings of Candidate Solutions}
 \begin{adjustbox}{width=1\textwidth}
@@ -28,6 +56,9 @@
 \end{adjustbox}
 \label{tab:eva}
 \end{table}
+
+\subsubsection{The Result of Evaluation}
+The average score of all the candidate solutions $\bar{R_{S}}$ is 17.833. According to the aforementioned evaluation framework in Methodology, The following solutions are eligible to become the final solutions for this IT deployment plan of computing department of Ara Institute of Canterbury. They are Jira, Telegram, Linux deployment with docker and Windows 10 Sandbox. With a further inspection on the selected solution, we find that all the 4 solutions cover all the topics of issues.
 
 
 % \subsection{Overview of Data}
